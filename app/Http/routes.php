@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+//Route::get('/', 'WelcomeControllers@index');
+Route::get('/', [ 'as' => 'posts', 'uses' => 'PostController@index']);
+Route::get('unpublished', [ 'as' => 'posts.unpublished', 'uses' => 'PostController@unpublished']);
 
 /*
 |--------------------------------------------------------------------------
