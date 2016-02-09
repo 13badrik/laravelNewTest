@@ -24,5 +24,20 @@ class PostController extends Controller
         $posts = $postModel->getUnPublishedPosts();
         return view('post.index',['posts' => $posts]);
     }
+    public function create(){
+
+    }
+    public function store(){
+
+    }
+    public function show($id){
+
+    }
+    public function edit($id){
+
+    }
+    public function update($id){
+
+    }
     //
 }
